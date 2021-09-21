@@ -1,12 +1,12 @@
 const { Pool } = require('pg')
 
 
-const pool = new Pool({
-    user: 'postgres',
-    host: 'localhost',
-    database: 'apibemobee',
-    password: '123456',
-    port: 4321,
+const pool = new Pool({//not required beause of var.env
+    //user: 'postgres',
+    //host: 'localhost',
+    //database: 'apibemobee',
+    //password: '123456',
+    //port: 4321,
 })
 
 pool.connect()

@@ -1,4 +1,4 @@
-FROM node:14
+FROM node:15
 
 WORKDIR /app
 
@@ -6,4 +6,6 @@ COPY ./ ./
 
 RUN npm install
 
-CMD ["node", "/api/index.js"]
+CMD ["node", "/app/api/index.js"]
+
+EXPOSE 8080
